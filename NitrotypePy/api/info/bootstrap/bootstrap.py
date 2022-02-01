@@ -1,4 +1,4 @@
-from api import access
+from ...access import access
 import json
 
 def bootstrap(item = ''):

@@ -1,4 +1,4 @@
-from NitrotypePy.api import access
+from .api import access
 import re
 
 def user(username = ''):
