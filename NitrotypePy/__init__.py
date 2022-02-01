@@ -1,3 +1,3 @@
-from NitrotypePy.api.info.bootstrap.items import car, loot
-from NitrotypePy.api.info.bootstrap import bootstrap
-from NitrotypePy.api.info import user
+from api.info.bootstrap.items import car, loot
+from api.info.bootstrap import bootstrap
+from api.info import user

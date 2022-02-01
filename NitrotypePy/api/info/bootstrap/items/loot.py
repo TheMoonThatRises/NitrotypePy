@@ -1,4 +1,4 @@
-from NitrotypePy.api.info.bootstrap import bootstrap
+from api.info.bootstrap import bootstrap
 
 def loot(loot_id = 0):
     loot_list = bootstrap.bootstrap('loot')

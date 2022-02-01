@@ -1,4 +1,4 @@
-from NitrotypePy.api.info.bootstrap import bootstrap
+from api.info.bootstrap import bootstrap
 
 def car(car_id = 0):
     car_list = bootstrap.bootstrap('cars')
