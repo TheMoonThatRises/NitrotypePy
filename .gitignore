@@ -1,0 +1,11 @@
+# IDE
+.idea
+.vscode
+
+# Caches
+*__pycache__
+
+# Packaging
+*.egg-info
+build
+dist
