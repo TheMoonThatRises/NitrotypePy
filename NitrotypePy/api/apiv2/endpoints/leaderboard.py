@@ -1,4 +1,4 @@
-from ...apiv2 import api
+from ...apiv2.api import api
 
 def leaderboard(time = 'season'):
     endpoint = 'leaderboards'
@@ -6,4 +6,4 @@ def leaderboard(time = 'season'):
     if time:
         endpoint += '?time=' + time
 
-    return api.api(endpoint)
+    return api(endpoint)

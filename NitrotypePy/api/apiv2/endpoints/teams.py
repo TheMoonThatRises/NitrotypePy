@@ -1,4 +1,4 @@
-from ...apiv2 import api
+from ...apiv2.api import api
 
 def teams(team_name = ''):
-    return api.api('teams/' + team_name)
+    return api('teams/' + team_name)

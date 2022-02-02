@@ -1,8 +1,8 @@
-from ...api import access
+from ..access import access
 import json
 
 def api(endpoint = ''):
-    data = json.loads(access.access('api/v2/' + endpoint))
+    data = json.loads(access('api/v2/' + endpoint))
 
     if data['status'] == 'OK':
         return data['results']
