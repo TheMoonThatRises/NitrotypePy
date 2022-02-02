@@ -2,7 +2,8 @@ from typing import List, Union
 from .....objects.api.info.bootstrap.item.loot import Loot
 from ..bootstrap import bootstrap
 
-def loot(loot_id = 0) -> Union[Loot, List[Loot], bool]:
+
+def loot(loot_id=0) -> Union[Loot, List[Loot], bool]:
     loot_list = bootstrap('loot')
 
     if loot_id:

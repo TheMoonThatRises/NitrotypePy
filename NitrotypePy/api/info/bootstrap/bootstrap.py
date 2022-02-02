@@ -1,7 +1,8 @@
 from ...access import access
 import json
 
-def bootstrap(item = ''):
+
+def bootstrap(item=''):
     bootstrap_items = json.loads(access('index/624/bootstrap.js')[40:-15])
 
     for bootstrap_item in bootstrap_items:

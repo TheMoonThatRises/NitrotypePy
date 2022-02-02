@@ -3,7 +3,8 @@ from ..access import access
 from ...objects.api.info.user import User
 import re
 
-def user(username = '') -> Union[User, bool]:
+
+def user(username='') -> Union[User, bool]:
     user_page = access('racer/' + username)
     user_data = re.findall("RACER_INFO.+\]\},", user_page)
 
