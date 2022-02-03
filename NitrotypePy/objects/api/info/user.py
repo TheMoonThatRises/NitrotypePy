@@ -1,4 +1,4 @@
-from typing import List, TypedDict
+from typing import List, Tuple, TypedDict
 from .bootstrap.item.loot import Loot
 
 
@@ -27,5 +27,5 @@ class User(TypedDict):
     tag: str
     tagColor: str
     garage: List[str]
-    cars: List[List[int, str, int]]
+    cars: List[Tuple[int, str, int]]
     loot: List[Loot]
