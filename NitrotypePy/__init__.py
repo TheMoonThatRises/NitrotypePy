@@ -16,3 +16,6 @@ from .api.info.bootstrap.bootstrap import bootstrap
 
 # Include user information
 from .api.info.user import user
+
+# Allow user to access the nitrotype api directly
+from .api.apiv2.api import api
