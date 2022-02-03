@@ -13,4 +13,4 @@ def access(endpoint=''):
             return scraper.get(base_url + endpoint).text
         else:
             print('Unable to get cloudscraper.')
-            raise
+            return False
