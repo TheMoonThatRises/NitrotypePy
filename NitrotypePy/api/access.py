@@ -1,6 +1,7 @@
 import cloudscraper
 
-def access(endpoint = ''):
+
+def access(endpoint=''):
     base_url = 'https://www.nitrotype.com/'
     scraper = None
     try:
