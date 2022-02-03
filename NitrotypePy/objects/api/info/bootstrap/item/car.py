@@ -1,5 +1,5 @@
 from typing import TypedDict
-from .basic_object import Options
+from ..basic_object import Options
 
 
 class Car(TypedDict):
