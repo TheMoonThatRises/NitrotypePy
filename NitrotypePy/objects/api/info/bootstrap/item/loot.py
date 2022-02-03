@@ -1,10 +1,10 @@
 from .basic_object import Options
+from typing import TypedDict
 
 
-class Loot:
-    def __init__(self):
-        self.lootID: int
-        self.type: str
-        self.name: str
-        self.options: Options
-        self.lastModified: int
+class Loot(TypedDict):
+    lootID: int
+    type: str
+    name: str
+    options: Options
+    lastModified: int

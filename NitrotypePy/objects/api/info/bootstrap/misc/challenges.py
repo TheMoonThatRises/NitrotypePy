@@ -1,8 +1,9 @@
-class Challenges:
-    def __init__(self):
-        self.challengeID: int
-        self.duration: str
-        self.type: str
-        self.reward: int
-        self.goal: int
-        self.expiration: int
+from typing import TypedDict
+
+class Challenges(TypedDict):
+    challengeID: int
+    duration: str
+    type: str
+    reward: int
+    goal: int
+    expiration: int
