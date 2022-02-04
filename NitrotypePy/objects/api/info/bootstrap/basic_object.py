@@ -1,5 +1,7 @@
-class Options:
-    def __init__(self):
-        self.rarity: str
-        self.type: str
-        self.largeSrc: str
+from typing import TypedDict
+
+Options = TypedDict('Options', {
+    'rarity': str,
+    'type': str,
+    'largeSrc': str
+})
