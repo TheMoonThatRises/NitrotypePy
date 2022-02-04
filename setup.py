@@ -3,7 +3,7 @@ from setuptools import setup, find_namespace_packages
 setup(
     name="NitrotypePy",
     version="0.0.3",
-    description="A way to access nitrotype's unoffical api",
+    description="A way to access nitrotype's unofficial api.",
     author="The Moon That Rises",
     url="https://www.github.com/RangerEmerald/NitrotypePy",
     packages=find_namespace_packages(include="NitrotypePy.*"),
