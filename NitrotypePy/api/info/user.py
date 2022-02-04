@@ -5,8 +5,8 @@ import re
 import json
 
 
-def user(username='') -> Union[User, bool]:
-    user_page = access('racer/' + username)
+def user(username="") -> Union[User, bool]:
+    user_page = access("racer/" + username)
     user_data = re.findall("RACER_INFO.+\]\},", user_page)
 
     if user_data:
