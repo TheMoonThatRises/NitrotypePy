@@ -13,4 +13,4 @@ def top(type="users") -> Dict[str, int]:
     :rtype: dict
     """
 
-    return bootstrap["top_players"][type]
+    return bootstrap("top_players")[type]
