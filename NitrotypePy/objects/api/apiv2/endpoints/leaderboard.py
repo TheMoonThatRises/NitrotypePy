@@ -1,25 +1,26 @@
-from typing import List
+from typing import List, TypedDict
 
 
-class LeaderboardTeams:
-    def __init__(self):
-        self.typed: int
-        self.secs: int
-        self.played: int
-        self.points: int
-        self.speed: str
-        self.dayRank: int
-        self.prevRank: int
-        self.rank: int
-        self.teamID: int
-        self.tag: str
-        self.tagColor: str
-        self.name: str
-        self.createdStamp: int
-        self.members: int
-        self.userID: int
+LeaderboardTeams = TypedDict(
+    "LeaderboardTeams",
+    {
+        "typed": int,
+        "secs": int,
+        "played": int,
+        "points": int,
+        "speed": str,
+        "dayRank": int,
+        "prevRank": int,
+        "rank": int,
+        "teamID": int,
+        "tag": str,
+        "tagColor": str,
+        "name": str,
+        "createdStamp": int,
+        "members": int,
+        "userID": int,
+    },
+)
 
 
-class Leaderboard:
-    def __init__(self):
-        self.scores: List[LeaderboardTeams]
+Leaderboard = TypedDict("Leaderboard", {"scores": List[LeaderboardTeams]})
