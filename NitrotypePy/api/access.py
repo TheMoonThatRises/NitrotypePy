@@ -7,12 +7,17 @@ except ModuleNotFoundError:
 def access(endpoint=""):
     """The function used to access the entirety of nitrotype.
 
-    Endpoints: https://www.nitrotype.com/{endpoint}
+    Endpoint
+    --------
+        https://www.nitrotype.com/{endpoint}
 
-    :param endpoint: The end url to access.
-    :type endpoint: str
-    :returns: A string of the html of the webpage, or of a json from the api.
-    :rtype: str
+    endpoint : str
+        The end url to access.
+
+    Returns
+    -------
+    str
+        A string of the html of the webpage, or of a json from the api.
     """
 
     base_url = "https://www.nitrotype.com/"

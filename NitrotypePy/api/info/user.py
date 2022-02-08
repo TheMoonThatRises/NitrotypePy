@@ -9,12 +9,20 @@ def user(username="") -> Union[User, bool]:
     """Returns the user's information.
 
     If news_id is specified, then it will return that specific news.
-    Endpoint: https://www.nitrotype.com/racer/{username}
 
-    :param username: The player's username.
-    :type username: str
-    :returns: A dict of the user's information, or False if user cannot be found.
-    :rtype: dict
+    Endpoint
+    --------
+        https://www.nitrotype.com/racer/{username}
+
+    Parameters
+    ----------
+    username : str
+        The player's username.
+
+    Returns
+    -------
+    dict
+        A dict of the user's information, or False if user cannot be found.
     """
 
     user_page = access("racer/" + str(username))

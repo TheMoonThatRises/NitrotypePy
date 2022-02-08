@@ -5,12 +5,19 @@ import json
 def api(endpoint=""):
     """Access the nitrotype api.
 
-    Endpoint: https://www.nitrotype.com/api/v2/{endpoint}
+    Endpoint
+    --------
+        https://www.nitrotype.com/api/v2/{endpoint}
 
-    :param endpoint: The endpoint for the nitrotype api.
-    :type endpoint: str
-    :returns: A dict of the information.
-    :rtype: dict
+    Parameters
+    ----------
+    endpoint: str
+        The endpoint for the nitrotype api.
+        
+    Returns
+    -------
+    dict
+        A dict of the information.
     """
 
     try:
