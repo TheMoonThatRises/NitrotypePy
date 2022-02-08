@@ -10,7 +10,7 @@ pip3 install git+https://www.github.com/RangerEmerald/NitrotypePy
 
 or
 
-```sh-sesssion
+```sh-session
 pip3 install git+https://www.github.com/RangerEmerald/NitrotypePy@branch-name
 ```
 
