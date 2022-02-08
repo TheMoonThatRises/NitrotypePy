@@ -12,7 +12,7 @@ def teams(team_name=""):
     ---------
     team_name : str
         The tag of the team.
-        
+
     Returns
     -------
     dict

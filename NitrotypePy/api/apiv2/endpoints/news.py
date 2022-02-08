@@ -14,9 +14,9 @@ def news(news_id=0) -> Union[News, List[News]]:
 
     Parameter
     ---------
-    news_id : int 
+    news_id : int
         The id of the news.
-    
+
     Returns
     -------
     dict

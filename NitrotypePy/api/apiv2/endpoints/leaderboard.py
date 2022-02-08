@@ -13,7 +13,7 @@ def leaderboard(time="season") -> Leaderboard:
     ----------
     time : str
         The time type; currently only supports season.
-        
+
     Returns
     -------
     dict

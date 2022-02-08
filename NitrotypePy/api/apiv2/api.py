@@ -13,7 +13,7 @@ def api(endpoint=""):
     ----------
     endpoint: str
         The endpoint for the nitrotype api.
-        
+
     Returns
     -------
     dict
