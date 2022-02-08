@@ -5,16 +5,23 @@ import json
 def api(endpoint=""):
     """Access the nitrotype api.
 
-    Endpoint: https://www.nitrotype.com/api/v2/{endpoint}
+    Endpoint
+    --------
+        https://www.nitrotype.com/api/v2/{endpoint}
 
-    :param endpoint: The endpoint for the nitrotype api.
-    :type endpoint: str
-    :returns: A dict of the information.
-    :rtype: dict
+    Parameters
+    ----------
+    endpoint: str
+        The endpoint for the nitrotype api.
+        
+    Returns
+    -------
+    dict
+        A dict of the information.
     """
 
     try:
-        data = json.loads(access("api/v2/" + endpoint))
+        data = json.loads(access("api/v2/" + str(endpoint)))
     except Exception as e:
         print("Unable to access api endpoint.")
         print(e)

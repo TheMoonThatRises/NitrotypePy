@@ -5,12 +5,19 @@ from ..bootstrap import bootstrap
 def top(type="users") -> Dict[str, int]:
     """Returns the top players/teams.
 
-    Endpoint: https://www.nitrotype.com/index/624/bootstrap.js
+    Endpoint
+    --------
+        https://www.nitrotype.com/index/624/bootstrap.js
 
-    :param type: Choose either top players or top teams.
-    :type type: str
-    :returns: A dict of all the top players or teams, depending on type.
-    :rtype: dict
+    Parameters
+    ----------
+    type : str
+        Choose either top players or top teams.
+
+    Returns
+    -------
+    dict
+        A dict of all the top players or teams, depending on type.
     """
 
     return bootstrap("top_players")[type]
