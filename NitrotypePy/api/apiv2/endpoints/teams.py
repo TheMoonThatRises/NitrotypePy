@@ -12,4 +12,4 @@ def teams(team_name=""):
     :rtype: dict
     """
 
-    return api("teams/" + team_name)
+    return api("teams/" + str(team_name))

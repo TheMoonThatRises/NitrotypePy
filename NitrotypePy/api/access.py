@@ -23,6 +23,6 @@ def access(endpoint=""):
         scraper = cloudscraper.CloudScraper()
     finally:
         if scraper:
-            return scraper.get(base_url + endpoint).text
+            return scraper.get(base_url + str(endpoint)).text
 
     return False

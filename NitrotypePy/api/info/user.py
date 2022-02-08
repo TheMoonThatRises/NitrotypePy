@@ -17,7 +17,7 @@ def user(username="") -> Union[User, bool]:
     :rtype: dict
     """
 
-    user_page = access("racer/" + username)
+    user_page = access("racer/" + str(username))
     user_data = re.findall("RACER_INFO.+\]\},", user_page)
 
     if user_data:

@@ -16,6 +16,6 @@ def leaderboard(time="season") -> Leaderboard:
     endpoint = "leaderboards"
 
     if time:
-        endpoint += "?time=" + time
+        endpoint += "?time=" + str(time)
 
     return api(endpoint)

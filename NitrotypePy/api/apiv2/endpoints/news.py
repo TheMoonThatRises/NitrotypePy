@@ -16,6 +16,6 @@ def news(news_id=0) -> Union[News, List[News]]:
     """
 
     if news_id:
-        return api("news/" + news_id)
+        return api("news/" + str(news_id))
     else:
         return api("news")
