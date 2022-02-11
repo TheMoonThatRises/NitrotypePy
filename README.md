@@ -14,6 +14,12 @@ or
 pip3 install git+https://github.com/RangerEmerald/NitrotypePy@branch-name
 ```
 
+or 
+
+```sh-session
+pip3 install NitrotypePy
+```
+
 ## About
 
 The endpoints this package uses are `https://www.nitrotype.com/racer/` along with `https://www.nitrotype.com/api/v2/`. The first link is used only to access racer information, while the second one is nitrotype's offical api.
