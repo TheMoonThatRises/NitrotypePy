@@ -25,7 +25,7 @@ def loot(loot_id=0) -> Union[Loot, List[Loot], bool]:
 
     if loot_id:
         for loot in loot_list:
-            if loot["lootID"] == loot_id:
+            if str(loot["lootID"]) == str(loot_id):
                 return loot
     else:
         return loot_list

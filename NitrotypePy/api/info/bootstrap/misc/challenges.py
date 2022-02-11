@@ -25,7 +25,7 @@ def challenges(challenge_id=0) -> Union[Challenges, List[Challenges], bool]:
 
     if challenge_id:
         for challenge in challenge_list:
-            if challenge["challengeID"] == challenge_id:
+            if str(challenge["challengeID"]) == str(challenge_id):
                 return challenge
     else:
         return challenge_list
