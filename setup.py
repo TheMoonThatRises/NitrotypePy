@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fp:
 
 setup(
     name="NitrotypePy",
-    version="0.0.5",
+    version="0.0.6",
     description="A way to access nitrotype's unofficial api.",
     long_description=readme,
     long_description_content_type="text/markdown",
