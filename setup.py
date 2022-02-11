@@ -14,6 +14,7 @@ setup(
     url="https://www.github.com/RangerEmerald/NitrotypePy",
     license="MIT",
     packages=find_namespace_packages(include="NitrotypePy.*"),
+    keywords=["nitrotype"],
     install_requires=[
         "cloudscraper >= 1.2.58",
     ],
