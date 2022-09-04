@@ -26,7 +26,7 @@ def user(username="") -> Union[User, bool]:
     """
 
     user_page = access("racer/" + str(username))
-    user_data = re.findall("RACER_INFO.+\]\},", user_page)
+    user_data = re.findall("RACER_INFO.+]},", user_page)
 
     if user_data:
         return json.loads(user_data[0][12:-1])
