@@ -1,5 +1,4 @@
-from typing import List, TypedDict
-
+from typing import TypedDict
 
 LeaderboardTeams = TypedDict(
     "LeaderboardTeams",
@@ -21,6 +20,3 @@ LeaderboardTeams = TypedDict(
         "userID": int,
     },
 )
-
-
-Leaderboard = TypedDict("Leaderboard", {"scores": List[LeaderboardTeams]})
