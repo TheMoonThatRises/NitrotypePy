@@ -23,7 +23,7 @@ def api(endpoint=""):
     try:
         data = json.loads(access("api/v2/" + str(endpoint)))
     except Exception as e:
-        print("Unable to access api endpoint.")
+        print("Unable to access api endpoint: " + str(endpoint))
         print(e)
         return False
 
