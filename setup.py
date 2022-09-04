@@ -6,16 +6,16 @@ with open("README.md", "r", encoding="utf-8") as fp:
 
 setup(
     name="NitrotypePy",
-    version="0.0.6",
+    version="0.0.7",
     description="A way to access nitrotype's unofficial api.",
     long_description=readme,
     long_description_content_type="text/markdown",
     author="The Moon That Rises",
-    url="https://www.github.com/RangerEmerald/NitrotypePy",
+    url="https://www.github.com/TheMoonThatRises/NitrotypePy",
     license="MIT",
     packages=find_namespace_packages(include="NitrotypePy.*"),
     keywords=["nitrotype"],
     install_requires=[
-        "cloudscraper >= 1.2.58",
+        "cloudscraper >= 1.2.64",
     ],
 )

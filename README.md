@@ -5,13 +5,13 @@ This package accesses nitrotype's official api along with its unofficial user ap
 ## Installation
 
 ```sh-session
-pip3 install git+https://github.com/RangerEmerald/NitrotypePy
+pip3 install git+https://github.com/TheMoonThatRises/NitrotypePy
 ```
 
 or
 
 ```sh-session
-pip3 install git+https://github.com/RangerEmerald/NitrotypePy@branch-name
+pip3 install git+https://github.com/TheMoonThatRises/NitrotypePy@branch-name
 ```
 
 or 
