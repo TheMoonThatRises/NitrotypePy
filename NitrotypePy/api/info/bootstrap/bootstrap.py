@@ -20,7 +20,7 @@ def bootstrap(item=""):
         A dict of the item, or False if the item cannot be found.
     """
 
-    bootstrap_items = json.loads(access("index/624/bootstrap.js")[40:-15])
+    bootstrap_items = json.loads(access("index/624/bootstrap.js")[40:-53])
 
     for bootstrap_item in bootstrap_items:
         if bootstrap_item[0].lower() == item.lower():
