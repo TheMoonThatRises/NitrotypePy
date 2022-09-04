@@ -1,8 +1,11 @@
 from ...apiv2.api import api
-from ....objects.api.apiv2.endpoints.leaderboard import Leaderboard
+from ....objects.api.apiv2.endpoints.leaderboard import LeaderboardTeams
+from typing import List, Union
 
 
-def leaderboard(time="season") -> Leaderboard:
+def leaderboard(
+    position=-1, time="season"
+) -> Union[LeaderboardTeams, List[LeaderboardTeams]]:
     """Returns nitrotype's leaderboards.
 
     Endpoint
@@ -11,13 +14,15 @@ def leaderboard(time="season") -> Leaderboard:
 
     Parameters
     ----------
+    position : int
+        The team position
     time : str
         The time type; currently only supports season.
 
     Returns
     -------
     dict
-        A dict of the nitrotype leaderboard.
+        The top team or a dict of the nitrotype leaderboard.
     """
 
     endpoint = "leaderboards"
@@ -25,4 +30,9 @@ def leaderboard(time="season") -> Leaderboard:
     if time:
         endpoint += "?time=" + str(time)
 
-    return api(endpoint)
+    leaderboards = api(endpoint)["scores"]
+
+    if 0 <= position <= 100:
+        return leaderboards[position]
+    else:
+        return leaderboards
